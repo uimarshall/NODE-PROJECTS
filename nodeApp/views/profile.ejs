@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 10px auto;
+            background-color: skyblue;
+
+            font-size: 36px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            text-align: center;
+
+        }
+
+        li {
+            text-align: center;
+            list-style-type: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <% include partials/nav.ejs%>
+    <h1>welcome to the profile of
+        <%= person %>
+    </h1>
+    <p><strong>Name: </strong>
+        <%= data.name%>
+    </p>
+    <p><strong>Level: </strong>
+        <%= data.level%>
+    </p>
+    <p><strong>Age: </strong>
+        <%= data.age%>
+    </p>
+    <h2>Hobbies</h2>
+    <ul>
+        <% data.hobbies.forEach((hobby)=>{%>
+        <li>
+            <%=hobby%>
+        </li>
+
+        <% })%>
+    </ul>
+</body>
+
+</html>
