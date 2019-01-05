@@ -1,0 +1,15 @@
+body {
+    margin: 10px auto;
+    background-color: chartreuse;
+    color: white;
+    font-size: 36px;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
