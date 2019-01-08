@@ -6,6 +6,7 @@ var server = http.createServer(function(req, res) {
 	// Response headers
 	res.writeHead(200, { "Content-Type": "text/html" });
 	// Response body
+	// Read the index.html and pipe it to user or res
 	var myReadStream = fs.createReadStream(__dirname + "/index.html", "utf8");
 
 	// myReadStream pipes to 'res'
